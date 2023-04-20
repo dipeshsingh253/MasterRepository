@@ -1,4 +1,0 @@
-d100
-true
-c
-amit
