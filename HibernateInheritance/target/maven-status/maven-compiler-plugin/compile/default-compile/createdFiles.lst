@@ -1,0 +1,6 @@
+com/example/model/Material.class
+com/example/model/PaintingStyle.class
+com/example/model/Painting.class
+com/example/model/ArtPiece.class
+com/example/model/Sculpture.class
+com/example/HibernateInheritanceApplication.class
