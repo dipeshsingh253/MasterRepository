@@ -1,0 +1,108 @@
+
+
+==>	// Structure of derived query methods in spring //
+	
+	
+	List<User> findByName(String name);
+	
+	List<User> findTop3ByName(String name);
+	
+	
+	
+==>	// Equalitiy condition keywords //
+	
+	List<User> findByName(String name);
+	
+	
+	// is or equals for readability
+	
+	List<User> findByNameIs(String name);
+	List<User> findByNameEquals(String name);
+	
+	
+	
+	// inequality comparison
+	
+	List<User> findByNameIsNot(String name);
+	
+	
+	
+	// null value comparison
+	
+	List<User> findByNameIsNull();
+	List<User> findByNameIsNotNull();
+	
+	
+	
+	// boolean value coparison
+	
+	List<User> findByActiveTrue();
+	List<User> findByActiveFalse();
+
+
+
+==>	// Simmilarity condition keywords //
+
+	List<User> findByNameStartingWith(String prefix);	// get users name starting with given prefix
+	
+	List<User> findByNameEndingWith(String suffix);		// get users name ending with given suffix
+	
+	List<User> findByNameContaining(String infix);		// get users name containing given infix
+	
+	
+	let's suppose we are doing something more complex. Say we need to fetch the users whose names start with an a, contain b and end with c.
+	
+	
+	List<User> findByNameLike(String likePattern);
+	
+	String likePattern = "a%b%c";
+	userRepository.findByNameLike(likePattern);
+	
+	
+	
+==>	// Comparison condition
+
+
+	// less than and less than equal 
+	List<User> findByAgeLessThan(Integer age);
+	List<User> findByAgeLessThanEqual(Integer age);
+
+
+	// greater than and greater than equal
+	List<User> findByAgeGreaterThan(Integer age);
+	List<User> findByAgeGreaterThanEqual(Integer age);
+	
+	
+	// age should be between
+	List<User> findByAgeBetween(Integer startAge, Integer endAge);
+	
+	
+	// age in collection of ages
+	List<User> findByAgeIn(Collection<Integer> ages);
+	
+	
+	// before or after date
+	List<User> findByBirthDateAfter(ZonedDateTime birthDate);
+	List<User> findByBirthDateBefore(ZonedDateTime birthDate);
+
+
+
+
+==> // Sorting the results
+
+
+	List<User> findByNameOrderByName(String name);		// default sorting order is asc
+	List<User> findByNameOrderByNameAsc(String name);	// asc sorting order
+	List<User> findByNameOrderByNameDesc(String name);	// desc sorting order
+	
+
+
+
+
+	
+	
+	
+
+
+	
+	
