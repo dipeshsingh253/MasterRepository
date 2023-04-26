@@ -56,6 +56,12 @@
         </div>
     </div>
 
+    <div>
+<%--
+ <img src="${pageContext.request.contextPath}/images/image-1.jpg" class="rounded mx-auto d-block" alt="Image 1">
+--%>
+    </div>
+
 
 </body>
 </html>

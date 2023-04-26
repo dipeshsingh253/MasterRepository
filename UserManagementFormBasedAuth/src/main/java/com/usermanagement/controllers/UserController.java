@@ -30,6 +30,7 @@ public class UserController {
         CustomUserDetails userDetails = (CustomUserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         String userRole = null;
         String userEmail = userDetails.getUsername();
+
         for (GrantedAuthority authority:userDetails.getAuthorities())
                 userRole = authority.getAuthority();
 
