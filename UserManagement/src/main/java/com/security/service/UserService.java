@@ -3,6 +3,9 @@ package com.security.service;
 
 import com.security.dto.UserDto;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.List;
 
 public interface UserService{
@@ -14,6 +17,9 @@ public interface UserService{
     UserDto getUserById(Long userId);
 
     List<UserDto> getAllUsers();
+
+
+    void refreshToken(HttpServletRequest request, HttpServletResponse response) throws IOException;
 
 
 }

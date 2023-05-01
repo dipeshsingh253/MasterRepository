@@ -3,7 +3,6 @@ package com.security;
 import com.security.dto.UserDto;
 import com.security.entity.Designation;
 import com.security.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
