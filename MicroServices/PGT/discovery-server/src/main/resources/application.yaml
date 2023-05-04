@@ -4,7 +4,10 @@ server:
 spring:
   application:
     name: service-registry
-
+  security:
+    user:
+      name: eureka
+      password: password
 eureka:
   instance:
     hostname: localhost

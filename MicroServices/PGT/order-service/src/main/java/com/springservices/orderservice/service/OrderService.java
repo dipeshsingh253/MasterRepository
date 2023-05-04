@@ -28,7 +28,7 @@ public class OrderService {
 
     private final OrderRepository orderRepository;
 
-    private final WebClient.Builder webClientBuilder;
+    private final WebClient webClient;
     public void placeOrder(OrderRequest orderRequest) {
 
         Order order = new Order();
@@ -44,7 +44,7 @@ public class OrderService {
 
         // call inventory service to verify that all the ordered items are in stock or not
 
-        InventoryResponse[] inventoryResponseArray = webClientBuilder.build().get()
+        InventoryResponse[] inventoryResponseArray = webClient.get()
                 .uri("http://localhost:8083/api/inventory/",
                         uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
                 .retrieve()
