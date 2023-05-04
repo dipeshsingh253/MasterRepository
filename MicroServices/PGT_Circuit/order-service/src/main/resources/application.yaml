@@ -1,0 +1,69 @@
+server:
+  port: 8081
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/order-service
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+  application:
+    name: order-service
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:password@localhost:8761/eureka # basic auth in eureka
+
+
+
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  zipking:
+    tracing:
+      endpoint: http://localhost:9411
+  tracing:
+    sampling:
+      probability: 1.0
+
+
+#Resilience4j Properties
+resilience4j:
+  circuitbreaker:
+    instances:
+      inventory:
+        registerHealthIndicator: true
+        event-consumer-buffer-size: 10
+        slidingWindowType: COUNT_BASED
+        slidingWindowSize: 5
+        failureRateThreshold: 50
+        waitDurationInOpenState: 5s
+        permittedNumberOfCallsInHalfOpenState: 3
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+
+  #Resilience4J Timeout Properties
+  timelimiter:
+    instances:
+      inventory:
+        timeout-duration: 3s
+
+  #Resilience4J Retry Properties
+  retry:
+    instances:
+      inventory:
+        max-attempts: 3
+        wait-duration: 5s
+
