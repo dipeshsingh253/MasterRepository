@@ -1,0 +1,42 @@
+
+
+Todays Notes on jfrog artifactory :
+===================================
+
+
+On windows : go to jfrog artifactory downloads : there are two options one is pro and another is oss.
+
+download the zip file -> app -> bin -> artifactory (bat file) -> exec it.
+
+then go to default url : http://localhost:8081/artifactory
+
+after that,
+
+check if jdk and mvn is installed.
+
+then create the set up on jfrog localhost. get the settings.xml and modify it accordingly.
+
+now save this settings.xml file to .m2 directory.
+
+now try to compile the project any maven project, you can see it is using jfrog artifactory for downloading dependencies.
+
+Now if you want to deploy any project as an artifactory then you have got a code snippet during set up on jfrog.
+
+Something like this : 
+<distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>DESKTOP-7NJ66FC-snapshots</name>
+        <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+</distributionManagement>
+
+and a encryped password like this : cmVmdGtuOjAxOjE3MTc2Njg2MDM6RXhnMnZIbG95cDZTRTU3bExJUGN4RmpBQUpF
+
+
+add the code snippet above in the pom.xml(after </dependencies> tag) of project that you want to deploy on jfrog.
+
+
+go to root of deployable maven project and exec : mvn deploy.
+
+Now you can use the deployed project as dependency in any project.
