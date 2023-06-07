@@ -12,6 +12,8 @@ then go to default url : http://localhost:8081/artifactory
 
 after that,
 
+YT Video : https://www.youtube.com/watch?v=a1B1jXXVzPQ&list=LL&index=2
+
 check if jdk and mvn is installed.
 
 then create the set up on jfrog localhost. get the settings.xml and modify it accordingly.
