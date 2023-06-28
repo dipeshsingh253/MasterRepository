@@ -1,0 +1,6 @@
+com\springtutuorial\springmongo\SpringbootMongodbApplication.class
+com\springtutuorial\springmongo\controller\UserRest.class
+com\springtutuorial\springmongo\model\User.class
+com\springtutuorial\springmongo\service\InsertionSort.class
+com\springtutuorial\springmongo\repo\UserRepo.class
+com\springtutuorial\springmongo\service\UserService.class
