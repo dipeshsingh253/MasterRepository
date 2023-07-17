@@ -17,7 +17,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 
 /**
- * Sorry I haven't realised this but we
+ * As this is a simple java project without any buidl or framework tool we need to add manually jar files to use ObjectMapper.
+ * Jars we need for this : 1 ) jackson-core 2 ) jackson-annotation 3 )jackson-databind
  */
 
 public class ObjectMapperUseCase {
