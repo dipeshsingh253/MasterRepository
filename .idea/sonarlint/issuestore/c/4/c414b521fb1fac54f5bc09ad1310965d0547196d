@@ -1,0 +1,7 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Å’þŒüÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¬Ó·éÿÿÿÿÿ
+F
+java:S2446"0"notify" may not wake up the appropriate thread.(­ÀôÉ
+f
+java:S2236"PRefactor the synchronisation mechanism to not use a Thread instance as a monitor(­ÀôÉ

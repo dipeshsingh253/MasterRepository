@@ -1,0 +1,20 @@
+
+o
+java:S1210"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(¥ñüü
+P
+java:S1118"":Add a private constructor to hide the implicit public one.(–†ç§
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(¦éº‡ûÿÿÿÿ
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(ƒ£ÁÌúÿÿÿÿ
+N	java:S106="9Replace this use of System.out or System.err by a logger.(À«ê¥
+N	java:S106B"9Replace this use of System.out or System.err by a logger.(‘ƒ¼§
+S	java:S106E"9Replace this use of System.out or System.err by a logger.(ßÒû¾øÿÿÿÿ
+S	java:S106N"9Replace this use of System.out or System.err by a logger.(èî‚êÿÿÿÿÿ
+S	java:S106U"9Replace this use of System.out or System.err by a logger.(Ä–Óîÿÿÿÿÿ
+S	java:S106W"9Replace this use of System.out or System.err by a logger.(ßÒû¾øÿÿÿÿ
+N	java:S106`"9Replace this use of System.out or System.err by a logger.(Ê‹¯ª
+N	java:S106o"9Replace this use of System.out or System.err by a logger.(Ï°šØ
+S	java:S106r"9Replace this use of System.out or System.err by a logger.(ßÒû¾øÿÿÿÿ
+N	java:S106{"9Replace this use of System.out or System.err by a logger.(§þæõ
+R	java:S125‚"<This block of commented-out lines of code should be removed.(ôñ½ã
+O	java:S106†"9Replace this use of System.out or System.err by a logger.(Ï°šØ
+T	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(ßÒû¾øÿÿÿÿ
