@@ -1,6 +1,6 @@
 # MasterRepository
 
-Master Repositor is a collection of projects or codes written by throughout my learning journey. This is more like a snapshot to look back at if stuck at some place in future for simple tasks.
+Master Repository is a collection of projects or codes written by me throughout my learning journey. This is more like a snapshot to look back at if I need it in the future.
 
 ## Collections
 
