@@ -1,0 +1,6 @@
+<configuration>
+    <appender name="NR" class="com.newrelic.logging.logback.NewRelicAppender"/>
+    <root level="INFO">
+        <appender-ref ref="NR"/>
+    </root>
+</configuration>
